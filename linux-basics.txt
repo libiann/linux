@@ -1,0 +1,109 @@
+1. What is Linux?
+A. Database Management System
+
+2. Ubuntu is:
+A. Linux Distribution
+
+3. What does WSL stand for?
+A. Windows Subsystem for Linux
+
+4. Linux is mainly used for:
+A. Servers and Development
+
+5. Which company developed WSL?
+A. Microsoft
+
+6. Which command displays the current working directory?
+A. pwd
+
+7. Which command lists files and folders?
+A. ls
+
+8. Which command displays the current logged-in user?
+A. whoami
+
+9. Which command shows the system hostname?
+A. hostname
+
+10. Which command displays the current date and time?
+A. date
+
+11. Which command displays Linux system information?
+A. uname -a
+
+12. Which command creates a new directory?
+A. mkdir
+
+13. What is the purpose of pwd?
+A. Show Current Directory
+
+14. What is the purpose of ls?
+A. List Files and Directories
+
+15. What is the purpose of whoami?
+A. Show Current User
+
+16. What is the purpose of hostname?
+A. Show System Name
+
+17. What is Ubuntu?
+A. Linux Distribution
+
+18. Ubuntu is installed on Windows through:
+A. WSL
+
+19. Which command would you use to verify Linux kernel information?
+A. uname -a
+
+20. Which command is used to create multiple directories?
+A. mkdir
+
+
+
+
+1. Define Linux. 
+Linux is the kernel which is the core component of an operating system.
+
+2. What are the advantages of Linux?
+Lightweight, Free, Fast startup, Real Linux commands, Works with Docker, Easy access to Windows file. 
+
+3. Why is Linux widely used in DevOps?
+Because most production servers are Linux.
+
+4. Explain the difference between Linux and Ubuntu.
+Linux is the kernel which is the core component of the operating system and Ubuntu is a Linux distribution built on top of the Linux kernel and includes additional software, package management tools, and a user interface, making it a complete operating system.
+
+5. What is a Linux Distribution?
+A Linux distribution is a complete operating system built using the Linux kernel,along with other software, tools, libraries and  a package manager.
+
+6. What is Ubuntu?
+Ubuntu is a Linux distribution built on the top of the Linux kernel.
+
+7. What is WSL?
+Window Subsystem for Linux used to run Ubuntu Linux directly inside Windows.
+
+8. Explain the relationship between Windows, WSL, and Ubuntu.
+we can run Ubuntu in windows directly using WSL.
+
+9. Why do Windows users install Ubuntu through WSL?
+Windows users install Ubuntu through WSL because it allows them to use a Linux environment directly inside Windows without installing a separate Linux operating system.
+
+10. Explain how WSL helps developers.
+Developers can use WSL to run Linux commands and development tools on Windows without installing Linux separately.
+
+11. Explain the purpose of the pwd command.
+Used to show current working directory.
+
+12. Explain the purpose of the ls command.
+Lists files and directories.
+
+13. Explain the purpose of the whoami command.
+Shows the current user.
+
+14. Explain the purpose of the hostname command.
+Shows the system name.
+
+15. Explain the purpose of the date, uname -a, and mkdir commands.
+date shows current date and time.
+uname -a shows Linux system information.
+mkdir creates a new folder
