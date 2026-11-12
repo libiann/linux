@@ -1,0 +1,116 @@
+1. What is a Linux Filesystem?
+A. Structure used to organize files and directories
+
+2. Which symbol represents the Linux Root Directory?
+A. /
+
+3. Which directory usually stores user files?
+A. /home
+
+4. Which directory contains configuration files?
+A. /etc
+
+5. What does the clear command do?
+A. Clear terminal screen
+
+6. What is the purpose of sudo?
+A. Execute command with administrator privileges
+
+7. What does pwd stand for?
+A. Present Working Directory
+
+8. Which command lists files and folders?
+A. ls
+
+9. Which command shows hidden files?
+A. ls -a
+
+10. Which command shows detailed file information?
+A. ls -l
+
+11. What does ls -la display?
+A. Detailed list including hidden files
+
+12. Which command changes directory?
+A. cd
+
+13. What does cd .. do?
+A. Move to parent directory
+
+14. What does cd ~ do?
+A. Go home directory
+
+15. Which path is an absolute path?
+A. /home/ubuntu/Documents
+
+16. Which command creates a directory?
+A. mkdir
+
+17. Which option creates parent directories automatically?
+A. mkdir -p
+
+18. What does ls -R do?
+A. Recursive listing
+
+19. Which command removes an empty directory?
+A. rmdir
+
+20. Which command removes a directory and its contents?
+A. rm -r
+
+
+
+
+1. Define Linux Filesystem.
+Structure used to organize files and directories.
+
+2. Explain the Root Directory (/).
+Everything starts from root. symbol is /. 
+/home - user files
+/etc - configuration files
+/var - logs and variable data
+/usr - applications and utilities
+/bin - essential commands
+/tmp - temporary Files
+
+3. What is the purpose of /home?
+It contains user files.
+
+4. What is the purpose of /etc?
+Its contains configuration files.
+
+5. Explain the clear command.
+Clears the terminal.
+
+6. What is sudo and why is it used?
+Super User DO and it is used to allow a normal user to execute a command with administrator privileges.
+
+7. Explain the pwd command.
+Present Working directory. it shows the current directory name.
+
+8. Differentiate between ls and ls -la.
+ls is used to list files and folders while ls -la shows detailed view along with hidden files.
+
+9. Explain cd .., cd ~ and cd /.
+cd .. is used to go back to parent directory, while cd ~ is used to go to home directory and cd / is used to go to the root directory.
+
+10. What is an Absolute Path?
+Absolute path shows the full path or address starting from root. eg: /home/student/Documents
+
+11. What is a Relative Path?
+Relative path shows the current locations based. eg: Documents
+
+12. Explain the purpose of mkdir -p.
+it is used to create parent directories if not existed and does not throw an error if the directory already exists.
+
+13. Explain the purpose of ls -R.
+Used for Recursive listing.
+
+14. Differentiate between rmdir and rm -r.
+rmdir deletes directory which is empty while rm -r deletes directory with contents.
+
+15. Why is rm -rf considered dangerous?
+Because it deletes the whole directory forcefully.
+
+
+
