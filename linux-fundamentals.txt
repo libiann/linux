@@ -1,0 +1,59 @@
+1. What is the purpose of the touch command?
+To create a new file
+
+2. Difference between cp and mv?
+cp is used to copy while mv is used to move or rename a file.
+
+3. How do you rename a file in Linux?
+Using mv command we can rename. Syntax: mv oldname.txt newname.txt
+
+4. Difference between > and >>?
+> is used to create a file or overwrite the content of the file, while >> is used to append new line to the end of the existing content.
+
+5. What is the purpose of the cat command?
+To view a file.
+
+6. Difference between cat and less?
+cat is used to view the content of the file while less is used to view large files page by page and scroll through them.
+
+7. Why is less preferred for large files?
+because it can view page by page and scroll through them.
+
+8. What does the head command do?
+lists first 10 lines of the file
+
+9. What does the tail command do?
+lists last 10 lines of the file.
+
+10. What is the purpose of tail -f?
+to monitor the file and shows new content added in real time.
+
+11. What information does wc provide?
+Shows the number of lines, words and characters in a file.
+
+12. What does wc -l count?
+counts only the number of lines.
+
+13. What is the purpose of the file command?
+shows the type of the file
+
+14. Difference between Nano and Vim?
+both are text editors. Nano is a simple, beginner-friendly command-line text editor in Linux. Vim is a powerful, advanced command-line text editor used in Linux and Unix systems.
+
+15. How do you save and exit Vim?
+ESC + :wq + Enter
+
+16. How do you exit Vim without saving?
+ESC + :q! + Enter
+
+17. Why is Vim important for DevOps engineers?
+Vim is useful for DevOps engineers because they frequently work with Linux servers, configuration files, scripts and application deployments.
+
+18. What is the purpose of cp -r?
+copy directories and all their contents.
+
+19. Which command is used to monitor logs in real time?
+tail -f filename
+
+20. Which command is used to identify a file type?
+file filename
