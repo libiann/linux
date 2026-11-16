@@ -1,0 +1,103 @@
+Task 1 — User Information Investigation
+Execute in ubuntu terminal: whoami, id, groups.
+Questions:
+1. What is your current username?
+libinannbabu
+
+2. Difference between UID and GID?
+UID means user ID - identifies a user
+GID means group ID - identifies the user's primary group.
+
+3. List all groups your user belongs to.
+libinannbabu adm dialout cdrom floppy sudo audio dip video plugdev netdev docker
+
+4. Which group allows administrative access?
+sudo
+
+Task 2 — Linux User Database
+Execute in ubuntu terminal: cat /etc/passwd
+Questions:
+1. Which file stores Linux user information?
+/etc/passwd
+
+2. Explain ubuntu:x:1000:1000:Ubuntu User:/home/ubuntu:/bin/bash
+Username : password placeholder : UID : GID : Comment : home directory : Login shell
+
+3. What is the purpose of the login shell field?
+The login shell field in Linux specifies which shell program starts when a user logs into the system.
+
+Task 3 — Linux Group Database
+Execute in ubuntu terminal: cat /etc/group
+Questions:
+1. Which file stores Linux group information?
+/etc/group
+
+2. What is the purpose of a group in Linux?
+In Linux, a group is a collection of users. Groups are used to manage permissions and control access to files,folders, and resources for multiple users to once.
+
+3. Explain docker:x:999:ubuntu
+Group name : password : GID : Members
+
+Task 4 — Permission Analysis
+Create employee.txt and analyze -rw-r--r--.
+Questions:
+Owner permissions, Group permissions, Others permissions, and file type meaning.
+Owner has read and write permissions.
+Group has read permission only.
+Others have read permission only.
+- means its a regular file.
+
+Task 5 — Numeric Permission Conversion
+Convert rwxrwxrwx, rwxr-xr-x, rw-r--r--, rw-------, r-xr-xr-x to numeric values.
+rwxrwxrwx -> 777
+rwxr-xr-x -> 755
+rw-r--r-- -> 644
+rw------- -> 600
+r-xr-xr-x -> 555
+
+Explain why 777 is dangerous and why 600 is recommended.
+Permission 777 means everyone has full permissions on the file or directory.
+Permission 600 means only the owner can read and write the file.
+
+Task 6 — chmod Practical
+Apply chmod 777, 644, and 600 to project.txt and explain results.
+777 means owner,group and others have the permission to read, write and execute.
+644 means owner has the permission to read and write while group and others have the permission to read only.
+600 means the owner has the permission to read and write while the group and others have no permission.
+
+Task 7 — Script Execution
+Create deploy.sh, run chmod +x deploy.sh.
+Explain execute permission and DevOps usage.
+Execute permission allows a user to run a file as a program or script.
+Execute permission is very import in DevOps because deployment and automation tasks often use shell scripts.
+
+Task 8 — Directory Permissions
+Create DevOpsLab and analyze drwxr-xr-x.
+d means directory
+rwx means owner has permission read,write and execute
+r-x means group and others have permission read and execute only.
+
+Explain ls -l vs ls -ld and directory execute permission.
+ls -l -> Lists the contents of a directory in long format, including permissions, owner, group, size and modification date.
+ls -ld ->Displays information about the directory itself rather than its contents.
+directory execute permission allows you to access/traverse the directory and access items inside it, subject to their permissions
+
+Task 9 — Ownership Management
+Use chown and explain difference between chmod and chown.
+using chmod we can change the permission of a file or directory while using chown we can change the owner of a file or directory.
+
+Task 10 — Sudo Verification
+Run sudo whoami and sudo -l.
+Explain sudo and why it is preferred over root login.
+sudo allows a user to execute commands with administrator privileges.It is preferred over root login because it provides better security, controlled access, command logging and accountability. It also reduces the risk of accidental system-level changes.
+
+
+Real DevOps Scenario
+deploy.sh → executable
+config.env → owner only
+application.log → owner write, others read
+Assign correct permissions and justify.
+deploy.sh(executable deployment script) can have the permission 755 means -rwxr-xr-x which means the owner can read, write and execute the file while group and others can read and execute only.
+config.env(sensitive configuration) can have the permission 600 means -rw------- which means the owner can read and write while group and others don't have any permission. because configuration files may contain database passwords, API keys and other secrets.Only the owner should be able to access them.
+application.log(owner write,others read) can have the permission 644 means -rw-r--r-- which means owner can read and write while group and others can read only. the owner can update the log file, while other users can read it without modifying it.
+
