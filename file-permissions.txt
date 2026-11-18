@@ -1,0 +1,39 @@
+1. Create a file called test.txt.
+   touch test.txt
+
+2. Display the current permissions of test.txt.
+   ls -la
+
+3. Change the permissions of test.txt so that:
+   • Owner has read and write permissions.
+   • Group has read-only permission.
+   • Others have read-only permission.
+   chmod 644 test.txt
+
+4. Verify the updated permissions of test.txt.
+   ls -l
+
+5. Create a shell script called deploy.sh.
+   touch deploy.sh
+
+6. Grant executable permission to deploy.sh.
+   chmod +x deploy.sh
+
+7. Verify that deploy.sh is executable.
+   ls -l
+
+8. Create a directory called secure_data.
+   mkdir secure_data
+
+9. Assign the following permissions to secure_data:
+   • Owner has full access.
+   • Group has read and execute permissions.
+   • Others have no permissions.
+   chmod 750 secure_data
+
+10. Verify the permissions of secure_data.
+    ls -ld secure_data
+
+11. Remove test.txt, deploy.sh, and secure_data.
+    rm test.txt deploy.sh
+    rmdir secure_data
