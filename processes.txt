@@ -1,0 +1,48 @@
+1. Display the currently logged-in user.
+   whoami
+
+2. Display the processes running in the current terminal session.
+   ps
+
+3. Display all running processes with detailed information.
+   ps aux
+
+4. Find all Bash shell processes running on the system.
+   ps aux | grep bash
+   ps -ef | grep bash
+
+5. Install the htop package.
+   sudo apt install htop
+
+6. Launch htop and verify that CPU and Memory usage are visible.
+   htop
+
+7. Open a new terminal and create a process that runs for 5 minutes.
+   sleep 300
+
+8. Search for the process created in Step 7.
+   pgrep sleep
+
+9. Identify the PID of the process.
+   pgrep sleep
+
+10. Open the real-time process monitoring tool and observe running processes.
+    htop
+
+11. Terminate the process created in Step 7 using its PID.
+    kill 107
+
+12. Verify that the process has been terminated successfully.
+    ps -p 123
+
+13. Create another process that runs for 10 minutes.
+    sleep 600
+
+14. Find the PID of the new process.
+    pgrep sleep
+
+15. Forcefully terminate the process using the appropriate command.
+    kill -9 139
+
+16. Verify that the process is no longer running.
+    ps -p 139
